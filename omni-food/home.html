@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- the "meta" tag helps the website to become responsive. 
+         It tells the devices browser to stay at it's width and not to zoom in/out 
+         the website to make content fit -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
         <link rel="stylesheet" href="grid.css">
         <link rel="stylesheet" href="node_modules/">
+        
         <link href="node_modules/normalize.css/normalize.css" >
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="queries.css">
         <title>OmniFood</title>
     </head>
     <body>
 
         <!-- The header is where the logo and navigation bar will go -->
         <header>
-            <nav>
+            <nav class="sticky" id="sticky">
                 <div class="row">
                     <img class="logo" src="logo-white.png" alt="OmniFood Logo">
                     <ul class="main-nav">
@@ -124,7 +131,7 @@
 
             </div>
             <div class="row">
-                <div class="col span-1-of-2 steps-box">
+                <div class="col span-1-of-2 steps-box screen">
                     <img class="app-screen" src="app-iPhone.png" alt="OmniFood app on iphone">
                 </div>
                 <div class="col span-1-of-2 steps-box">
@@ -412,5 +419,13 @@
             </div>
         </footer>
     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/respond/1.4.2.respond.min.js"></script>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="script.js"></script>
+
     </body>
+
+    
 </html>
